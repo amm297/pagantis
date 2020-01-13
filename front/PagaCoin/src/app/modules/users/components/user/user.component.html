@@ -1,0 +1,12 @@
+<p>{{'user.id' | translate}}: {{user?.id}}</p>
+<p>{{'user.name' | translate}}: {{user?.name}}</p>
+<p>{{'user.surname' | translate}}: {{user?.surname}}</p>
+<p>{{'user.phone' | translate}}: {{user?.phone}}</p>
+<p>{{'user.address' | translate}}: {{user?.address}}</p>
+<p>{{'user.gender' | translate}}: {{user?.gender}}</p>
+<button *ngIf="!user?.wallets" type="button" name="button" (click)=requestWallets(user?.id)> {{'user.wallets' | translate}}</button>
+<ng-container *ngIf="user?.wallets">
+<div *ngFor="let wallet of user?.wallets">
+  <p>{{wallet?.hash}} {{ wallet?.balance}}</p>
+</div>
+</ng-container>

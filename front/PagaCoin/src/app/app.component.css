@@ -1,0 +1,15 @@
+:host {
+  
+}
+
+app-header {
+  display: block;
+  background-color: #03e3fc;
+  padding: 1rem;
+}
+
+app-footer {
+  position: absolute;
+   bottom: 0;
+   height: 2.5rem;
+}

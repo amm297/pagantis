@@ -1,0 +1,27 @@
+
+version: '3'
+services:
+  app-server:
+    # Configuration for building the docker image for the backend service
+    build:
+      context: back/user # Use an image built from the specified dockerfile in the `polling-app-server` directory.
+      dockerfile: Dockerfile
+    environment:
+      SPRING_DATA_MONGODB_URI: mongodb://db:27017/
+      SPRING_DATA_MONGODB_DATABASE: pagaCoin 
+    ports:
+      - "8080:8080" # Forward the exposed port 8080 on the container to port 8080 on the host machine
+    restart: always
+    links:
+      - db
+    depends_on: 
+      - db # This service depends on mysql. Start that first.
+  db:
+    image: mongo
+    hostname: localhost
+    ports:
+      - "27017:27017"
+  mongo-seed:
+    build: mongo-seed
+    links:
+      - db

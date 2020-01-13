@@ -1,0 +1,22 @@
+<div>
+  <app-transaction-user [users]= users [initValue]="success" (selectWalletEvent)="fromWallet($event)"></app-transaction-user>
+</div>
+
+<div>
+  <app-transaction-user [users]= users [initValue]="success" (selectWalletEvent)="toWallet($event)"></app-transaction-user>
+</div>
+
+<label for="amount">
+  <input type="number" name="amount"  [(ngModel)]="request.amount">
+</label>
+
+<button type="button" name="button" (click)="send()">{{'transaction.send' | translate}}</button>
+
+<ng-container *ngIf="errors">
+  <p *ngFor="let error of errors"> *{{error | translate}} </p>
+</ng-container>
+
+
+<ng-container *ngIf="success">
+  <p > {{'transaction.success' | translate}} </p>
+</ng-container>

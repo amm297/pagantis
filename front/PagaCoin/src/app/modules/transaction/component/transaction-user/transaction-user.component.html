@@ -1,0 +1,14 @@
+<label for="user">
+  {{'transaction.from' | translate}}
+  <select name="user" [ngModel]="userName" (ngModelChange)="selectUser($event)">
+    <option *ngFor="let user of users" value="{{user?.name}}"> {{user?.name}} </option>
+  </select>
+</label>
+
+<label *ngIf="user?.wallets" for="userWallet">
+  <select name="userWallet" [ngModel]="userWalleName" (ngModelChange)="selectWallet($event)">
+    <option *ngFor="let wallet of user.wallets" value="{{wallet?.hash}}"> {{wallet?.hash}} </option>
+  </select>
+</label>
+
+<p *ngIf="userWallet"> {{userWallet?.balance}}</p>

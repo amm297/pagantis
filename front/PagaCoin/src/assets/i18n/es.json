@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "users": "Usuarios",
+    "transaction": "Transacciones"
+  },
+  "login": {
+    "link": "Usuarios"
+  },
+  "user": {
+    "id": "id",
+    "name": "Nombre",
+    "surname": "Apellidos",
+    "phone": "Telefono",
+    "address": "Direccion",
+    "gender": "Sexo",
+    "wallets": "Walets"
+  },
+  "transaction": {
+    "from": "De",
+    "to": "a",
+    "send": "Enviar",
+    "success": "Operacion realizada con exito",
+    "wrong-value": "Por favor rellena los campos",
+    "balance-error": "No dispones de saldo suficiento para hacer la transferencia",
+    "default-error": "Ha ocurrido un error intentalo en unos momentos"
+  }
+}

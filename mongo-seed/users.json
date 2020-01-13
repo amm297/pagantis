@@ -1,0 +1,34 @@
+{
+    "_id" : {"$oid": "5e1af7f731db7947cedba7c2"},
+    "name" : "User 1",
+    "surname" : "surnameUser1",
+    "phone" : "phoneUser1",
+    "address" : "addressUser1",
+    "gender" : "genderUser1",
+    "wallets" : [ 
+        {
+            "hash" : "wallet1user1",
+            "balance" : "29"
+        }
+    ],
+    "_class" : "com.pagantins.pagacoin.domain.User"
+}
+{
+    "_id" : {"$oid": "5e1af80f31db7947cedba7d3"},
+    "name" : "User 2",
+    "surname" : "surnameUser2",
+    "phone" : "phoneUser2",
+    "address" : "addressUser2",
+    "gender" : "genderUser2",
+    "wallets" : [ 
+        {
+            "hash" : "wallet1user2",
+            "balance" : "9"
+        }, 
+        {
+            "hash" : "wallet2user2",
+            "balance" : "122"
+        }
+    ],
+    "_class" : "com.pagantins.pagacoin.domain.User"
+}

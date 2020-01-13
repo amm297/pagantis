@@ -1,0 +1,13 @@
+:host {
+    background-color:  #ccc;
+    text-align: left;
+    display: inline-block;
+}
+
+p {
+  float: left;
+}
+
+nav {
+  float: right;
+}

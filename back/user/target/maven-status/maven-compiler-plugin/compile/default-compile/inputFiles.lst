@@ -1,0 +1,14 @@
+/home/alberto/Escritorio/pagantis/back/user/src/main/java/com/pagantins/pagacoin/service/wallet/WalletService.java
+/home/alberto/Escritorio/pagantis/back/user/src/main/java/com/pagantins/pagacoin/configuration/WebConfig.java
+/home/alberto/Escritorio/pagantis/back/user/src/main/java/com/pagantins/pagacoin/domain/Wallet.java
+/home/alberto/Escritorio/pagantis/back/user/src/main/java/com/pagantins/pagacoin/domain/User.java
+/home/alberto/Escritorio/pagantis/back/user/src/main/java/com/pagantins/pagacoin/configuration/MongoConfiguration.java
+/home/alberto/Escritorio/pagantis/back/user/src/main/java/com/pagantins/pagacoin/service/user/UserService.java
+/home/alberto/Escritorio/pagantis/back/user/src/main/java/com/pagantins/pagacoin/domain/Transaction.java
+/home/alberto/Escritorio/pagantis/back/user/src/main/java/com/pagantins/pagacoin/controller/WalletController.java
+/home/alberto/Escritorio/pagantis/back/user/src/main/java/com/pagantins/pagacoin/PagaCoin.java
+/home/alberto/Escritorio/pagantis/back/user/src/main/java/com/pagantins/pagacoin/domain/Account.java
+/home/alberto/Escritorio/pagantis/back/user/src/main/java/com/pagantins/pagacoin/service/UsersRepository.java
+/home/alberto/Escritorio/pagantis/back/user/src/main/java/com/pagantins/pagacoin/configuration/BeanConfiguration.java
+/home/alberto/Escritorio/pagantis/back/user/src/main/java/com/pagantins/pagacoin/controller/UserController.java
+/home/alberto/Escritorio/pagantis/back/user/src/main/java/com/pagantins/pagacoin/domain/exceptions/TransactionBalanceException.java

@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: "mongodb://db:27017/"
+      database: "pagaCoin"
